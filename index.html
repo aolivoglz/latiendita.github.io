@@ -1,1 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café, Zapatos & Ropa | Tienda Online</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
 
+  <!-- Encabezado -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#" class="text-2xl font-bold text-amber-700">CaféStyle</a>
+      <nav class="hidden md:flex space-x-8 text-sm font-medium">
+        <a href="#inicio" class="hover:text-amber-600 transition">Inicio</a>
+        <a href="#caracteristicas" class="hover:text-amber-600 transition">Características</a>
+        <a href="#precios" class="hover:text-amber-600 transition">Precios</a>
+        <a href="#contacto" class="hover:text-amber-600 transition">Contacto</a>
+      </nav>
+      <a href="#precios" class="bg-amber-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-amber-700 transition">
+        Comprar ahora
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero / Inicio -->
+  <section id="inicio" class="bg-gradient-to-br from-amber-50 to-orange-50 py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        Café, Zapatos y Ropa de Calidad
+      </h1>
+      <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+        Descubre productos seleccionados con el mejor estilo y sabor. Todo lo que necesitas en un solo lugar.
+      </p>
+      <a href="#precios" class="inline-block bg-amber-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-700 transition shadow-md">
+        Ver ofertas
+      </a>
+    </div>
+  </section>
+
+  <!-- Características -->
+  <section id="caracteristicas" class="py-16 md:py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">¿Por qué elegirnos?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Café -->
+        <div class="bg-amber-50 rounded-2xl p-8 text-center hover:shadow-lg transition">
+          <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-5 text-3xl">
+            ☕
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Café Premium</h3>
+          <p class="text-gray-600">
+            Granos seleccionados de origen único, tostado artesanal y sabor excepcional en cada taza.
+          </p>
+        </div>
+
+        <!-- Zapatos -->
+        <div class="bg-blue-50 rounded-2xl p-8 text-center hover:shadow-lg transition">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-5 text-3xl">
+            👟
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Zapatos Cómodos</h3>
+          <p class="text-gray-600">
+            Diseño moderno, materiales de primera calidad y máxima comodidad para tu día a día.
+          </p>
+        </div>
+
+        <!-- Ropa -->
+        <div class="bg-rose-50 rounded-2xl p-8 text-center hover:shadow-lg transition">
+          <div class="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-5 text-3xl">
+            👕
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Ropa Estilosa</h3>
+          <p class="text-gray-600">
+            Prendas versátiles, tejidos suaves y tendencias actuales para que siempre luces genial.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabla de precios / Productos -->
+  <section id="precios" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-4">Nuestros productos</h2>
+      <p class="text-center text-gray-600 mb-12">Elige lo que más te guste y recibe envío rápido</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Producto 1: Café -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
+          <div class="h-48 bg-amber-100 flex items-center justify-center text-6xl">
+            ☕
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Café de Especialidad</h3>
+            <p class="text-gray-600 text-sm mb-4">250g de granos tostados artesanalmente</p>
+            <div class="flex items-center justify-between">
+              <span class="text-2xl font-bold text-amber-700">$12.99</span>
+              <button class="bg-amber-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-amber-700 transition">
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 2: Zapatos -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition relative">
+          <span class="absolute top-4 right-4 bg-green-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            Popular
+          </span>
+          <div class="h-48 bg-blue-100 flex items-center justify-center text-6xl">
+            👟
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Zapatillas Urbanas</h3>
+            <p class="text-gray-600 text-sm mb-4">Comodidad y estilo para todos los días</p>
+            <div class="flex items-center justify-between">
+              <span class="text-2xl font-bold text-blue-700">$59.99</span>
+              <button class="bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 3: Ropa -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
+          <div class="h-48 bg-rose-100 flex items-center justify-center text-6xl">
+            👕
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Camiseta Premium</h3>
+            <p class="text-gray-600 text-sm mb-4">Algodón 100% orgánico, varios colores</p>
+            <div class="flex items-center justify-between">
+              <span class="text-2xl font-bold text-rose-700">$24.99</span>
+              <button class="bg-rose-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-rose-700 transition">
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer id="contacto" class="bg-gray-900 text-gray-300 py-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-center md:text-left">
+          <h3 class="text-xl font-bold text-white mb-2">CaféStyle</h3>
+          <p class="text-sm">Café, zapatos y ropa de calidad para ti.</p>
+        </div>
+        <div class="flex space-x-6 text-sm">
+          <a href="#" class="hover:text-white transition">Política de privacidad</a>
+          <a href="#" class="hover:text-white transition">Términos</a>
+          <a href="#" class="hover:text-white transition">Contacto</a>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm">
+        © 2025 CaféStyle. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
