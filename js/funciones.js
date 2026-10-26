@@ -10,7 +10,7 @@ $( document ).ready( function() {
   });
 });
 
-$( document ).ready( function() {
+$("#invokerDialog").click( function() {
   $("#invokerDialog").modal('show');
 });
 
