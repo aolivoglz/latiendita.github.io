@@ -11,7 +11,7 @@ $( document ).ready( function() {
 });
 
 $( document ).ready( function() {
-  $("#myModal").modal('show');
+  $("#invokerDialog").modal('show');
 });
 
 $('#mypopup').on('show.bs.modal', function (e) {
