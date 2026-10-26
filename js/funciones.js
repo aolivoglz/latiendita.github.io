@@ -1,3 +1,3 @@
-$function() {
-    $("#dialog").dialog();
+$(function() {
+    $( "#dialog" ).dialog();
 });
