@@ -9,3 +9,16 @@ $( document ).ready( function() {
     return false;
   });
 });
+
+$('#mypopup').on('show.bs.modal', function (e) {
+      var anchorTag = e.relatedTarget; // reference to the element that trigger modal popup in your case anchar tag
+      url = $(anchorTag).attr("href");
+      $.ajax({
+          url: url,
+          type: 'GET',
+          dataType: 'html'
+      })
+      .always(function(responseData) {
+          $("#mypopup .modal-content").html(responseData);
+      });
+});
