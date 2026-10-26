@@ -10,9 +10,9 @@ $( document ).ready( function() {
   });
 });
 
-$("#invokerDialog").click( function() {
+/*$("#invokerDialog").click( function() {
   $("#invokerDialog").modal('show');
-});
+});*/
 
 $('#mypopup').on('show.bs.modal', function (e) {
       var anchorTag = e.relatedTarget; // reference to the element that trigger modal popup in your case anchar tag
