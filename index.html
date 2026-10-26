@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <title>Café, Zapatos & Ropa | Tienda Online</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="/latiendita.github.io/js/funciones.js"></script>
@@ -23,14 +23,20 @@
         <a href="#inicio" class="hover:text-amber-600 transition">Inicio</a>
         <a href="#caracteristicas" class="hover:text-amber-600 transition">Características</a>
         <a href="#precios" class="hover:text-amber-600 transition">Productos</a>
-        <a href="/latiendita.github.io/anexos/contacto.html" rel="pop-up" class="hover:text-amber-600 transition">Contacto</a>
+        <a href="/latiendita.github.io/anexos/contacto.html" data-toggle="modal" data-target="#mypopup" class="hover:text-amber-600 transition">Contacto</a>
       </nav>
       <!--a href="#precios" class="bg-amber-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-amber-700 transition">
         Comprar ahora
       </a-->
     </div>
   </header>
+<div class="modal fade com-modal" id="mypopup" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
 
+    </div>
+  </div>
+</div>
   <!-- Hero / Inicio -->
   <section id="inicio" class="bg-gradient-to-br from-amber-50 to-orange-50 py-16 md:py-24">
     <div class="max-w-6xl mx-auto px-4 text-center">
