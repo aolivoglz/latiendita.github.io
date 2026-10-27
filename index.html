@@ -24,7 +24,7 @@
         <a href="#inicio" class="hover:text-amber-600 transition">Inicio</a>
         <a href="#caracteristicas" class="hover:text-amber-600 transition">Características</a>
         <a href="#precios" class="hover:text-amber-600 transition">Productos</a>
-        <a href="#" commandfor="invokerDialog" command="show-modal" class="hover:text-amber-600 transition">Contacto</a>
+        <a href="#" id="btnContacto" class="hover:text-amber-600 transition">Contacto</a>
       </nav>
       <!--a href="#precios" class="bg-amber-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-amber-700 transition">
         Comprar ahora
@@ -47,6 +47,24 @@
     </div>
   </form>
 </dialog>
+<script>
+  const dialog = document.getElementById('invokerDialog');
+  const btnContacto = document.getElementById('btnContacto');
+  const btnCerrarX = document.getElementById('btnCerrarX');
+  const btnCancelar = document.getElementById('btnCancelar');
+
+  // Abrir el modal de forma interactiva
+  btnContacto.addEventListener('click', (e) => {
+    e.preventDefault(); // Evita que el '#' recargue o mueva la página
+    dialog.showModal();
+  });
+
+  // Cerrar el modal al presionar la '✕'
+  btnCerrarX.addEventListener('click', () => dialog.close());
+
+  // Cerrar el modal al presionar 'Cancelar'
+  btnCancelar.addEventListener('click', () => dialog.close());
+</script>
     </div>
   </header>
 
