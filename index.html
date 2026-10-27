@@ -36,21 +36,12 @@
           <button id="btnCerrarX" class="text-gray-500 hover:text-gray-700">✕</button>
         </div>
           <form method="dialog" class="flex flex-col gap-3">
-            <input type="text" placeholder="Tu Nombre" class="border p-2 rounded" required />
-            <input type="email" placeholder="Tu Correo" class="border p-2 rounded" required />
-            <textarea placeholder="Tu Mensaje" class="border p-2 rounded" rows="4" required></textarea>
-          
-            <div class="flex justify-end gap-2 mt-2">
-              <button type="button" commandfor="invokerDialog" command="close" class="px-4 py-2 bg-gray-200 rounded">Cancelar</button>
-              <button type="submit" class="px-4 py-2 bg-amber-600 text-white rounded hover:bg-amber-700">Enviar</button>
-            </div>
           </form>
       </dialog>
       <script>
         const dialog = document.getElementById('invokerDialog');
         const btnContacto = document.getElementById('btnContacto');
         const btnCerrarX = document.getElementById('btnCerrarX');
-        const btnCancelar = document.getElementById('btnCancelar');
       
         // Abrir el modal de forma interactiva
         btnContacto.addEventListener('click', (e) => {
@@ -60,9 +51,6 @@
       
         // Cerrar el modal al presionar la '✕'
         btnCerrarX.addEventListener('click', () => dialog.close());
-      
-        // Cerrar el modal al presionar 'Cancelar'
-        btnCancelar.addEventListener('click', () => dialog.close());
       </script>
     </div>
   </header>
@@ -202,7 +190,7 @@
         <div class="flex space-x-6 text-sm">
           <a href="#" class="hover:text-white transition">Política de privacidad</a>
           <a href="#" class="hover:text-white transition">Términos</a>
-          <a href="#" class="hover:text-white transition">Contacto</a>
+          <a href="#" id="btnContacto" class="hover:text-white transition">Contacto</a>
         </div>
       </div>
       <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm">
